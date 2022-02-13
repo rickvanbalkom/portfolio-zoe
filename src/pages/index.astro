@@ -23,19 +23,22 @@ let title = 'My Astro Site';
     
     <link rel="stylesheet" href={Astro.resolve('../styles/global.css')}>
 </head>
-<body class="container px-8 lg:px-20 mx-auto">
-  <header class="mt-16 h-36 flex justify-between">
-    <h1 class="text-xl font-bold leading-7">Rui Hu</h1>
-    <nav class="flex space-x-16">
-      <a class="text-xl font-normal leading-7">About</a>
-      <a class="text-xl font-normal leading-7">Work</a>
+<body class="p-5">
+  <header class="flex flex-row justify-between mb-60 md:max-w-xl">
+    <h1 class="text-xl font-bold">Rui Hu</h1>
+    <nav class="flex space-x-14">
+      <a class="text-xl">Work</a>
+      <a class="text-xl">About</a>
     </nav>
   </header>
-  <main>
-    <img class="bg-slate-600" width="60" height="80" src={Astro.resolve('../../public/assets/logo.svg')} alt="Astro logo">
-    <h2 class="text-3xl md:text-5xl lg:text-7xl font-bold">Physical Prototyping</h2>
-    <h2 class="text-3xl md:text-5xl lg:text-7xl font-bold">Envision Technology</h2>
-    <h2 class="text-3xl md:text-5xl lg:text-7xl font-bold">Creative Research</h2>
+  <main class="sm:mx-14 grid grid-cols-1 xl:grid-cols-12">
+    <div class="mb-5 xl:col-span-6">
+      <h2 class="text-4xl sm:text-5xl md:text-6xl leading-tight sm:leading-tight md:leading-tight font-bold">/UX Design</h2>
+      <h2 class="text-4xl sm:text-5xl md:text-6xl leading-tight sm:leading-tight md:leading-tight font-bold">/Creative Research</h2>
+      <h2 class="text-4xl sm:text-5xl md:text-6xl leading-tight sm:leading-tight md:leading-tight font-bold">/Product Design</h2>
+      <h2 class="text-4xl sm:text-5xl md:text-6xl leading-tight sm:leading-tight md:leading-tight font-bold">/Future Design</h2>
+    </div>
+    <div class="bg-red-400 h-60 xl:col-span-6"></div>
   </main>
 </body>
 </html>

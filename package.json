@@ -1,5 +1,5 @@
 {
-  "name": "@example/starter",
+  "name": "portfolio-zoe",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -9,7 +9,7 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "astro": "^0.21.13",
+    "astro": "^0.22.20",
     "tailwindcss": "^3.0.6"
   }
 }

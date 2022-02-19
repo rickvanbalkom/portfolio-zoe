@@ -1,6 +1,5 @@
 ---
 const {title} = Astro.props;
-const path = Astro.site.pathname;
 
 ---
 <html lang="en">
@@ -15,10 +14,10 @@ const path = Astro.site.pathname;
 </head>
 <body>
   <header class="flex flex-row justify-between mb-60 sticky p-6 top-0 bg-white">
-    <h1 class="text-xl font-bold"><a href={path}>Rui Hu</a></h1>
+    <h1 class="text-xl font-bold"><a href="/">Rui Hu</a></h1>
     <nav class="flex space-x-14 mr-14">
-      <a href={path + 'work'} class="text-xl">Work</a>
-      <a href={path + 'about'} class="text-xl">About</a>
+      <a href="/work" class="text-xl">Work</a>
+      <a href="/about" class="text-xl">About</a>
     </nav>
   </header>
   <main class="mx-6 sm:mx-20">

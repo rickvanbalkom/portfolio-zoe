@@ -2,28 +2,21 @@
 // Component Imports
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const title = "Rui Hu - Work";
+const title = "Work";
 
 ---
-<BaseLayout title={title}>
-  <div class="grid grid-cols-1 md:grid-cols-12 md:h-max gap-x-10 gap-y-24">
-    <div class="md:col-span-6 lg:col-span-4 sticky top-20 bg-white">
-      <h2 class="text-4xl underline leading-relaxed">UX/UI Design</h2>
-      <h2 class="text-4xl underline leading-relaxed">Creative Research</h2>
-      <h2 class="text-4xl underline leading-relaxed">Product Design</h2>
-      <h2 class="text-4xl underline leading-relaxed">Future Design</h2>
+<BaseLayout pageTitle={title}>
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-x-10 gap-y-10 sm:gap-y-24">
+    <div class="flex flex-col justify-start pb-5 lg:col-span-6 sticky top-[76px] bg-white">
+      <h2 class="text-3xl sm:text-4xl underline leading-relaxed">UX/UI Design</h2>
+      <h2 class="text-3xl sm:text-4xl underline leading-relaxed">Creative Research</h2>
     </div>
-    <img src="/images/supermarket-model-with-booklet.png" class="md:col-span-6 lg:col-span-8">
-    <img src="/images/supermarket-model-with-booklet.png" class="md:col-span-6 md:col-start-7 lg:col-span-8 lg:col-start-5">
-    <img src="/images/supermarket-model-with-booklet.png" class="md:col-span-6 md:col-start-7 lg:col-span-8 lg:col-start-5">
-    <img src="/images/supermarket-model-with-booklet.png" class="md:col-span-6 md:col-start-7 lg:col-span-8 lg:col-start-5">
-    <img src="/images/supermarket-model-with-booklet.png" class="md:col-span-6 md:col-start-7 lg:col-span-8 lg:col-start-5">
-    <img src="/images/supermarket-model-with-booklet.png" class="md:col-span-6 md:col-start-7 lg:col-span-8 lg:col-start-5">
-    <img src="/images/supermarket-model-with-booklet.png" class="md:col-span-6 md:col-start-7 lg:col-span-8 lg:col-start-5">
-    <img src="/images/supermarket-model-with-booklet.png" class="md:col-span-6 md:col-start-7 lg:col-span-8 lg:col-start-5">
-    <img src="/images/supermarket-model-with-booklet.png" class="md:col-span-6 md:col-start-7 lg:col-span-8 lg:col-start-5">
-    <img src="/images/supermarket-model-with-booklet.png" class="md:col-span-6 md:col-start-7 lg:col-span-8 lg:col-start-5">
-    <img src="/images/supermarket-model-with-booklet.png" class="md:col-span-6 md:col-start-7 lg:col-span-8 lg:col-start-5">
-
+    <img src="/images/work/future-supermarket.png" class="lg:col-span-6">
+    <img src="/images/work/bord.png" class="lg:col-span-6 lg:col-start-7">
+    <img src="/images/work/ai-human.png" class="lg:col-span-6 lg:col-start-7">
+    <img src="/images/work/crate.jpg" class="lg:col-span-6 lg:col-start-7">
+    <img src="/images/work/caena.png" class="lg:col-span-6 lg:col-start-7">
+    <img src="/images/work/dig-and-build.jpg" class="lg:col-span-6 lg:col-start-7">
+    <img src="/images/work/obel.jpg" class="lg:col-span-6 lg:col-start-7">
   </div>
 </BaseLayout>

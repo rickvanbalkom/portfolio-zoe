@@ -1,0 +1,35 @@
+---
+// Component Imports
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectHeader from '../../components/ProjectHeader.astro';
+
+const title = "BORD";
+
+---
+<BaseLayout pageTitle={title}>
+  <div class="grid grid-cols-1 lg:grid-cols-project">
+    <div class="flex flex-col justify-between lg:col-span-1">
+      <div>
+        <h2 class="mb-3 text-4xl font-bold">BORD</h2>
+        <p class="text-xl"><strong>Group</strong> design project</p>
+        <p class="text-xl"><strong>Project data:</strong> Feb 2020 - Jun 2020</p>
+        <p class="text-xl"><strong>Client:</strong> United Streets of Nuenen</p>
+      </div>
+      <img src="/images/work/bord.png" class="my-5 lg:mt-24 lg:mb-2">
+    </div>
+    <div class="lg:col-span-1 lg:col-start-3 text-justify">
+      <p class="text-xl">This project aims to explore the future living scenarios with home IoT appliances, with the focus on how home IoT can contribute to prepare and assist the future elderly to live in their own home for a longer time.</p>
+      <p class="text-xl"><br /></p>
+      <p class="text-xl">A vital part in elderly's routine who lived independent is doing groceries. For relatively younger elderly who are in a physical and mental good condition, doing groceries is a daily routine to keep active during their retirement. But for elderly with less physical abilities, they might experience difficulties during grocery shopping or even have to give up this activity. The impression of not having the physical ability to do your groceries, affects the way of independent living and higher level of satisfaction in elderly’s daily life.</p>
+      <p class="text-xl"><br/></p>
+      <p class="text-xl">BORD is designed for middle-aged users who are still living with their children. As a smart grocery assistant, BORD can help the whole family to plan and to have an overview of their food-related activities. Grocery plan, meal plan, dinner attendance, food storage, etc. Family members can also use it as a communication board in the kitchen. Once the children move away, BORD can still be used in separate households. The elderly can use BORD to plan dinner events and children can use BORD to assist the elderly with daily grocery in a non-intrusive way.</p>
+    </div>
+    <ProjectHeader title="Research"></ProjectHeader>
+    <ProjectHeader title="Scenario Exploration"></ProjectHeader>
+    <ProjectHeader title="Design Exploration"></ProjectHeader>
+    <ProjectHeader title="Final Design"></ProjectHeader>
+    <div class="lg:col-span-2 lg:col-start-2">
+      <img src="/images/work/bord.png">
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,51 @@
+---
+// Component Imports
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectHeader from '../../components/ProjectHeader.astro';
+import ProjectOverview from '../../components/ProjectOverview.astro';
+import ProjectParagraph from '../../components/ProjectParagraph.astro';
+import ProjectVideo from '../../components/ProjectVideo.astro';
+
+const title = "Dig & Build";
+
+---
+<BaseLayout pageTitle={title}>
+  <div class="grid grid-cols-1 lg:grid-cols-project">
+    <ProjectOverview title={title} image="/images/work/dig-and-build.jpg">
+      <div slot="highlights">
+        <p><strong>Individual</strong> design project</p>
+        <p><strong>Project date:</strong> Feb 2018 - Jul 2018</p>
+        <p><strong>Client:</strong> Province Drenthe</p>
+      </div>
+      <div slot="summary">
+        <p>This project is framed by Hans van der Markt and the Province Drenthe. The project starts with researching about the narrative and the space separately, then merge the narrative and the space together to create a new narrative. The goal of this project is to create inspirational materials for the province that can be used to create new experiences on the N34 highway, for both the drivers and residents in the neighborhood.</p>
+      </div>
+    </ProjectOverview>
+
+    <ProjectHeader>The Narrative</ProjectHeader>
+    <ProjectParagraph>
+      He-y come on out' by Hoshi Shinichi is a short fictional novel. The novel takes a social criticism perspective, shows the conflict between nature and human development. To analyze the narrative, I first break down all the text by the structure of the novel. Then I extra the unique writing style of the writer, and the two main conflictions exist in the story.  As the result of my narrative study, the content gets translated into two groups of objects to visualize the events around the main character in the story: a fictional hole on the ground. One represents the change in nature, the other represents the human development. To make the objects readable as a continuative narrative and independent from the original story, each object has given a name.
+    </ProjectParagraph>
+
+    <ProjectHeader>The Space</ProjectHeader>
+    <ProjectParagraph>
+      Later during my research on Drenthe, I found out an unique byproduct of the building process of the N34: the sand lake. The sand is dug out for highway construction and later the sand hole gets filled with water to become recreation lake.
+    </ProjectParagraph>
+    <ProjectParagraph>
+      This dig and build process is an interesting example of coexisting of human development and nature. Near N34 there are two lakes like this: Het Nije Hemelriek and Het Veenmeer. 
+    </ProjectParagraph>
+
+    <ProjectHeader>Design Proposal</ProjectHeader>
+    <ProjectParagraph>
+      To show the dig and build relationship between sand lakes and N34, I connect them back to each other with a route. For Het Veenmeer, which is about 2 kilometers away from the N34 a driving route is created. For Het Nije Hemelriek, which is about 600 meters away from the N34, a walking route is created.
+    </ProjectParagraph>
+    <ProjectParagraph>
+      Two groups of objects are selected from the Japanese story, one tells the dig story, the other tells the build story. They are placed along the route between sand lake and the N34.
+    </ProjectParagraph>
+    <ProjectParagraph>
+      Dig and build gets reconnected, new narrative and experience are created.
+    </ProjectParagraph>
+    <ProjectVideo youtubeId="Mon9UBI5v5I"></ProjectVideo>    
+
+  </div>
+</BaseLayout>

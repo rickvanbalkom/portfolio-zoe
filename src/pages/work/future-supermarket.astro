@@ -1,0 +1,54 @@
+---
+// Component Imports
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectHeader from '../../components/ProjectHeader.astro';
+import ProjectOverview from '../../components/ProjectOverview.astro';
+import ProjectParagraph from '../../components/ProjectParagraph.astro';
+
+const title = "Imagine the future supermarkets";
+
+---
+<BaseLayout pageTitle={title}>
+  <div class="grid grid-cols-1 lg:grid-cols-project">
+    <ProjectOverview title={title} image="/images/work/future-supermarket.png">
+      <div slot="highlights">
+        <p><strong>Individual</strong> design project</p>
+        <p><strong>Project date:</strong> Sep 2021 - Jan 2022</p>
+        <p><strong>Stakeholders:</strong> Albert Heijn, Jumbo, Plus</p>
+      </div>
+      <div slot="summary">
+        <p>This project brings theories from future design, participatory design, and design probes into practice through an explorative design case. The design case aims to find out what kind of futures tech savvy customers would want for their future supermarkets. The design case goes through the process of defining relevant futures, creating physical handles, designing the co-speculation workshop, defining the participant, conducting a pilot study, conducting the final study, analyzing and physicalizing insights from final studies, and stakeholder evaluation. As a result, rich future insights from the participants have been collected. This way of investigating the future has also received initial industry recognition from the stakeholders.</p>
+      </div>
+    </ProjectOverview>
+
+    <ProjectHeader>Define Future Scope</ProjectHeader>
+    <ProjectParagraph>
+      From secondary research, I sketch out five future directions that I believe will be important for future supermarkets. The pinpointed future directions are validated through conversation with the stakeholders. After receiving recognition from the stakeholders, trend research is conducted to gather more evidence on why those future directions are relevant for the future.
+    </ProjectParagraph>
+
+    <ProjectHeader>Physical Handles for Conversation</ProjectHeader>
+    <ProjectParagraph>
+      One feature that makes this project unique is the co-speculation probes, which are designed as physical handles to encourage and inspire future discussion. The probes are made from 2 types of cardboard. The off-white one represents the physical material/world, the yellow part represents the digital, smart element. The probes are also modular, and don't have any predetermined functions. So the participants can be as creative as they want with the probes.
+    </ProjectParagraph>
+
+    <ProjectHeader>Pilot</ProjectHeader>
+    <ProjectParagraph>
+      The main study in the design case is the co-speculation workshop. Due to the explorative nature and the complexity of the workshop, six pilot studies are performed. Important elements for piloting include, how to present the probes, how to introduce the five future directions, how and when to intervene, and the order of the procedures.
+    </ProjectParagraph>
+
+    <ProjectHeader>Co-speculation Workshop</ProjectHeader>
+    <ProjectParagraph>
+      This design case focus on what tech savvy customers want for their future supermarkets. In total, ten individual workshops are held. The workshop begins with a free discussion around the five pinpointed future directions. Participants show what they want for and how they define each direction with the design probes. After that, participants are asked to create a future grocery scene on the black building canvas. The canvas is there to give the participants some limitation, so they have to focus on the essence of their stories. Participants’ insights from the workshop are processed with thematic analysis. Ten main themes and numerous sub-themes are unveiled.
+    </ProjectParagraph>
+
+    <ProjectHeader>The Future Grocery Dollhouse</ProjectHeader>
+    <ProjectParagraph>
+      The insights from participants are used to give more details to the five future directions. Based on the mentioned frequency and interpretations from my part, I decide which themes or sub themes are important for each future direction. As a results, I have create five future grocery scenes, to represent the future visions from the participants. To physicalize the scenes, a future supermarket dollhouse has been designed. It is a portable dollhouse in 1:20 scale. Within the house sit the five future grocery scenes and an information booklet. The booklet contains the relevant themes, quotes from participants, key concepts behind each scene, and a storyboard to demonstrate the use case. The dollhouse has been presented to the stakeholders individually, aims to communicate participants’ future insights in a elaborated way.
+    </ProjectParagraph>
+
+    <ProjectHeader>Stakeholders Evaluation</ProjectHeader>
+    <ProjectParagraph>
+      The main objective for stakeholder evaluation is to discover the positive overlap and the friction points between the two involved parties. As the result, all stakeholders have expressed positive attitude toward the proposed way of futuring, and have recognized some potential industry value in the design case. One stakeholder thinks this way of futuring can be offered to their customers as a form of customers service, to improve their service focused image. The other stakeholder thinks the dollhouse has drawn a picture of how future grocery can looks like if the current trends continue to develop, He believes that is what makes this design case a valuable future exploration.
+    </ProjectParagraph>
+  </div>
+</BaseLayout>

@@ -1,0 +1,30 @@
+---
+// Component Imports
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectHeader from '../../components/ProjectHeader.astro';
+import ProjectOverview from '../../components/ProjectOverview.astro';
+
+const title = "OBELL";
+
+---
+<BaseLayout pageTitle={title}>
+  <div class="grid grid-cols-1 lg:grid-cols-project">
+    <ProjectOverview title={title} image="/images/work/obell.jpg">
+      <div slot="highlights">
+        <p><strong>Individual</strong> design project</p>
+        <p><strong>Project date:</strong> Apr 2016 - Jun 2016</p>
+      </div>
+      <div slot="summary">
+        <p>Shape and material are seen and felt the first when people are interacting with a physical product. In the conventional product design process, shape and material are usually determined after knowing the function of the product. What will happen when you turn this process around? This project started with shape study, then the shape is given material based on its shape features, then the object(with certain shape and material) is given function based on its shape and material.</p>
+        <p><br /></p>
+        <p>The goal of this project is to explore and train the design sensitivity about shape and material, and how to translate the expression and language of shape and material into proper product.</p>
+      </div>
+    </ProjectOverview>
+
+    <ProjectHeader>Shape Study</ProjectHeader>
+
+    <ProjectHeader>From Shape To Material</ProjectHeader>
+
+    <ProjectHeader>From Material To Design</ProjectHeader>
+  </div>
+</BaseLayout>

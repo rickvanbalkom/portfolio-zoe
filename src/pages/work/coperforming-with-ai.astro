@@ -1,0 +1,55 @@
+---
+// Component Imports
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectHeader from '../../components/ProjectHeader.astro';
+import ProjectOverview from '../../components/ProjectOverview.astro';
+import ProjectParagraph from '../../components/ProjectParagraph.astro';
+import ProjectVideo from '../../components/ProjectVideo.astro';
+
+const title = "Co-performing with AI";
+
+---
+<BaseLayout pageTitle={title}>
+  <div class="grid grid-cols-1 lg:grid-cols-project">
+    <ProjectOverview title={title} image="/images/work/ai-human.png">
+      <div slot="highlights">
+        <p><strong>Individual</strong> research-through-design project</p>
+        <p><strong>Project date:</strong> Sep 2020 - Jan 2021</p>
+        <p><strong>Client:</strong> Philips Healthcare</p>
+      </div>
+      <div slot="summary">
+        <p>Soon, Philips Azurion, an image-guided therapy medical machine will add artificial intelligence (AI) to its system. The present of AI will change the human-machine relationship from human-center (The user gives order to the machine) to human-AI co-performance. The challenge Philips is facing is how to redesign the control for such machine, so the controller will be able to host this two-way communication without adding even more complexity. The goals of this project are: 1. to understand the new dynamic between users and the system, 2. to produce knowledge that guide and inspire the future design of control interface on such machines.</p>
+        <p><br /></p>
+        <p>This project takes a tangible interface lens, proposes that physicalizing the intentionality of AI through tangible interaction will increase interpretability and bring transparency to the co-performance process with AI. Three prototypes are designed to test this hypnosis with nine UX experts in Philips Healthcare. The result of the study is considered as the first step to form the guideline for the future design of the control interface for human-AI co performance.</p>
+      </div>
+    </ProjectOverview>
+
+    <ProjectHeader>Research</ProjectHeader>
+
+    <ProjectHeader>Design Exploration</ProjectHeader>
+    <ProjectParagraph>
+      Knowledge from literature research is translated into sketches and low-fi prototypes, to explore how different styles of interaction can shape physical design of the controllers. A 1:1 replica of the current controller is also made for sensing the existing interaction and functionality.
+    </ProjectParagraph>
+
+    <ProjectHeader>Context Exploration</ProjectHeader>
+    <ProjectParagraph>
+      After mapping out the general operational procedure (yellow post-it), I identified how AI can function within different stages (blue post-it) and how the human user will co-perform with AI (green post-it). From talking with the client, we pinpoint four meaningful scenes where the human user and AI need to work together.
+    </ProjectParagraph>
+
+    <ProjectHeader>Research Prototypes</ProjectHeader>
+    <ProjectParagraph>
+      Three low fidelity models made from 1.5mm cardboard and 80g printing paper are designed for this study as research prototypes. The goal of these models is to confront the participants with physical designs which contained different tangible interface features, to help them talk about their preferences and insight about control interface for dialoguing with AI during co-performance. The design of the model did not represent the final and complete design for control interface. The pictures below show how the user can use different controllers to overwrite AI's decision.
+    </ProjectParagraph>
+
+    <ProjectHeader>Video Demonstration</ProjectHeader>
+    <ProjectParagraph>
+      Due to corona restriction, the expert interviews are held online. A video is made to introduce the research prototypes to the participants. The video mainly demonstrates how the different controller will be used during the four pinpointed scenes. It is also used to explain the goal of this study and guide the process of the interview.
+    </ProjectParagraph>
+    <ProjectVideo youtubeId="BMKFPIQgPCs"></ProjectVideo>
+
+    <ProjectHeader>Expert Interview</ProjectHeader>
+    <ProjectParagraph>
+      Participants' preferences and insight are gathered through semi-structured interviews. Then the data is analyzed through the thematic analysis method. Five themes and relevant codes are discovered. From the result, I am able to conclude how AI is expected to function in such machine and the role of AI during the human-AI dialogy. Through various tangible lenses (shape changing and embodied metaphor), the role of tangible features for such a control interface is also explored.
+    </ProjectParagraph>
+  </div>
+</BaseLayout>

@@ -1,0 +1,38 @@
+---
+// Component Imports
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectHeader from '../../components/ProjectHeader.astro';
+import ProjectOverview from '../../components/ProjectOverview.astro';
+import ProjectParagraph from '../../components/ProjectParagraph.astro';
+import ProjectVideo from '../../components/ProjectVideo.astro';
+
+const title = "Crate";
+
+---
+<BaseLayout pageTitle={title}>
+  <div class="grid grid-cols-1 lg:grid-cols-project">
+    <ProjectOverview title={title} image="/images/work/crate.jpg">
+      <div slot="highlights">
+        <p><strong>Individual</strong> design project</p>
+        <p><strong>Project date:</strong> Feb 2018 - Jul 2018</p>
+        <p><strong>Coached by:</strong> Friso Dijkstra Design Studio</p>
+      </div>
+      <div slot="summary">
+        <p>Common objects are mostly beautiful and designed with smart thoughts behind them. We sometimes forget to appreciate those mundane beauties. In this project, I pick a light-wood fruit crate as my common object of interest. Through the process of general research, factory visit, and experimenting with the material. I translate what I observe as the “essence of light-wood crates” into a modular furniture set.</p>
+      </div>
+    </ProjectOverview>
+
+    <ProjectHeader>Research</ProjectHeader>
+
+    <ProjectHeader>Factory Visit</ProjectHeader>
+    <ProjectVideo youtubeId="sw7mjpaa89U"></ProjectVideo>    
+
+    <ProjectHeader>Design Exploration</ProjectHeader>
+
+    <ProjectHeader>Final Design</ProjectHeader>
+    <ProjectParagraph>
+      The final design consists of a writeable (digital) blackboard, phone App, barcode scanners(can be placed freely around the whole house), and a digital writing pen. BORD can be connected with other smart appliances like the coffee machine and washing machines, so when coffee beans and detergent are low in stock BORD could add them to the list automatically.
+    </ProjectParagraph>
+
+  </div>
+</BaseLayout>

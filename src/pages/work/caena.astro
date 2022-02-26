@@ -1,0 +1,38 @@
+---
+// Component Imports
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectHeader from '../../components/ProjectHeader.astro';
+import ProjectOverview from '../../components/ProjectOverview.astro';
+import ProjectParagraph from '../../components/ProjectParagraph.astro';
+import ProjectVideo from '../../components/ProjectVideo.astro';
+
+const title = "CAENA";
+
+---
+<BaseLayout pageTitle={title}>
+  <div class="grid grid-cols-1 lg:grid-cols-project">
+    <ProjectOverview title={title} image="/images/work/caena.png">
+      <div slot="highlights">
+        <p><strong>Group</strong> design project</p>
+        <p><strong>Project date:</strong> Feb 2021 - Apr 2021</p>
+      </div>
+      <div slot="summary">
+        <p>Inspired by Aesthetic of Everyday and Interactive Machine Learning, an interactive system, CAENA is designed to enchant the home dining experience. Food and the dining experience have been an important way to facilitate human connection and celebrate cultural traditions. We identified an opportunity to use technology to create a dinner experience that was more interesting, beautiful to enable people to interact with each other.</p>
+        <p><br /></p>
+        <p>The group has conceptualized CAENA, a smart dinning lamp that aims to enchant the home dining experience with Spatial Augmented Reality and AI. CAENA uses personal and environmental data to create unique experiences, and allows users to interact with the system before, during and after the event. CAENA consists of a data collection system (phone App), a projection system (imbedded in the dining lamp), and a tangible interaction system (imbedded in the dining table top). Our design collects the user’s preferences and feedback everytime they use CENA, to train algorithm to continuously create better personalized experiences. Interactive Machine Learning is used in CAENA so the AI models is rapidly iterating.</p>
+      </div>
+    </ProjectOverview>
+
+    <ProjectHeader>Theoretical Background</ProjectHeader>
+
+    <ProjectHeader>Concept Exploration</ProjectHeader>
+    <ProjectParagraph>
+      The concept iteration starts with “using AI to improve the home cooking experience”, to “using AI to create generative art that use abstract art to visualize daily dietary data”, ends with “using AI to add an immersive, aesthetic experience to the mundane dinning process”. There are two main challenges that we want to improve through iteration: firstly, we don’t want the aesthetic experience to be too staged or intrusive. So, the cooking/dining experience will stay as original as possible. The second challenge is to protect data privacy. We want to create smart, aesthetic experience that doesn’t require abundant personal data.
+    </ProjectParagraph>
+
+    <ProjectHeader>Design Exploration</ProjectHeader>
+
+    <ProjectHeader>Final Design</ProjectHeader>
+    <ProjectVideo youtubeId="W4KQMwvaaqo"></ProjectVideo>    
+  </div>
+</BaseLayout>

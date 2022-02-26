@@ -1,0 +1,16 @@
+---
+// Component Imports
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import WorkLayout from '../../layouts/WorkLayout.astro';
+import WorkItem from '../../components/WorkItem.astro';
+
+const title = "Work";
+
+---
+<BaseLayout pageTitle={title}>
+  <WorkLayout>
+    <WorkItem page="bord" image="bord.png"></WorkItem>
+    <WorkItem page="coperforming-with-ai" image="ai-human.png"></WorkItem>
+    <WorkItem page="caena" image="caena.png"></WorkItem>
+  </WorkLayout>
+</BaseLayout>

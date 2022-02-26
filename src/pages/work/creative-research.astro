@@ -1,8 +1,8 @@
 ---
 // Component Imports
-import BaseLayout from '../layouts/BaseLayout.astro';
-import WorkLayout from '../layouts/WorkLayout.astro';
-import WorkItem from '../components/WorkItem.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import WorkLayout from '../../layouts/WorkLayout.astro';
+import WorkItem from '../../components/WorkItem.astro';
 
 const title = "Work";
 
@@ -10,10 +10,8 @@ const title = "Work";
 <BaseLayout pageTitle={title}>
   <WorkLayout>
     <WorkItem page="future-supermarket" image="future-supermarket.png"></WorkItem>
-    <WorkItem page="bord" image="bord.png"></WorkItem>
     <WorkItem page="coperforming-with-ai" image="ai-human.png"></WorkItem>
     <WorkItem page="crate" image="crate.jpg"></WorkItem>
-    <WorkItem page="caena" image="caena.png"></WorkItem>
     <WorkItem page="dig-and-build" image="dig-and-build.jpg"></WorkItem>
     <WorkItem page="obell" image="obell.jpg"></WorkItem>
   </WorkLayout>

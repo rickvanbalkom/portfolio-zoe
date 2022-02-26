@@ -1,0 +1,28 @@
+---
+let path = Astro.request.url;
+let design = "UX/UI Design";
+let designUrl = "/work/ux-ui-design";
+let research = "Creative Research";
+let researchUrl = "/work/creative-research";
+
+if (path.toString().endsWith('/ux-ui-design')) {
+  design = "<strong>" + design + "</strong>";
+  designUrl = "/work";
+}
+
+if (path.toString().endsWith('/creative-research')) {
+  research = "<strong>" + research + "</strong>";
+  researchUrl = "/work";
+}
+---
+<div class="grid grid-cols-1 lg:grid-cols-zoe">
+  <div class="flex flex-col justify-start pb-5 lg:col-span-1 sticky top-[76px] bg-white">
+    <a href={designUrl}>
+      <h2 class="text-3xl sm:text-4xl underline leading-relaxed">{design}</h2>
+    </a>
+    <a href={researchUrl}>
+      <h2 class="text-3xl sm:text-4xl underline leading-relaxed">{research}</h2>
+    </a>
+  </div>
+  <slot />
+</div>

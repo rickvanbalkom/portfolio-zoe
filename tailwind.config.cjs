@@ -6,7 +6,7 @@ module.exports = {
     theme: {
       extend: {
         gridTemplateColumns: {
-          'project': '36.4% 13.6% 50%'
+          'zoe': '36.4% 13.6% 50%'
         }
       },
       fontFamily: {

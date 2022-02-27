@@ -8,7 +8,7 @@ const title = "OBELL";
 ---
 <BaseLayout pageTitle={title}>
   <div class="grid grid-cols-1 lg:grid-cols-zoe">
-    <ProjectOverview title={title} image="/images/work/obell.jpg">
+    <ProjectOverview title={title} image="/images/work/obell/header.png">
       <div slot="highlights">
         <p><strong>Individual</strong> design project</p>
         <p><strong>Project date:</strong> Apr 2016 - Jun 2016</p>
@@ -21,9 +21,15 @@ const title = "OBELL";
     </ProjectOverview>
 
     <ProjectHeader>Shape Study</ProjectHeader>
+    <img src="/images/work/obell/shape.png" class="lg:col-span-3">
+    <img src="/images/work/obell/selected-shape.png" class="lg:col-span-3">
 
     <ProjectHeader>From Shape To Material</ProjectHeader>
+    <img src="/images/work/obell/material.png" class="mb-5 lg:mb-24 lg:col-span-2 lg:col-start-2">
+    <img src="/images/work/obell/composition.png" class="mb-5 lg:col-span-3">
 
     <ProjectHeader>From Material To Design</ProjectHeader>
+    <img src="/images/work/obell/wax.png" class="mb-5 lg:mb-24 lg:col-span-2">
+    <img src="/images/work/obell/final-design.png" class="mb-5 lg:col-span-2 lg:col-start-2">
   </div>
 </BaseLayout>

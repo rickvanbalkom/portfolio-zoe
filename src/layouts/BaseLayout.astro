@@ -1,6 +1,17 @@
 ---
-const {pageTitle} = Astro.props;
+const { pageTitle } = Astro.props;
 
+let path = Astro.request.url;
+let work = "Work";
+let about = "About";
+
+if (path.toString().includes('/work')) {
+  work = "<strong>" + work + "</strong>";
+}
+
+if (path.toString().includes('/about')) {
+  about = "<strong>" + about + "</strong>";
+}
 ---
 <html lang="en">
 <head>
@@ -18,15 +29,15 @@ const {pageTitle} = Astro.props;
   <header class="flex flex-row justify-between mb-28 lg:mb-60 sticky p-6 top-0 bg-white">
     <h1 class="text-xl font-bold"><a href="/">Rui Hu</a></h1>
     <nav class="flex space-x-14 sm:mr-14">
-      <a href="/work" class="text-xl">Work</a>
-      <a href="/about" class="text-xl">About</a>
+      <a href="/work" class="text-xl">{work}</a>
+      <a href="/about" class="text-xl">{about}</a>
     </nav>
   </header>
   <main class="mx-6 sm:mx-20">
     <slot />
   </main>
-  <footer class="p-6 text-center mt-28 sm:mt-60">
-    Copyright 2022
+  <footer class="p-6 text-sm text-center mt-24">
+    Rui Hu 2022
   </footer>
 </body>
 </html>

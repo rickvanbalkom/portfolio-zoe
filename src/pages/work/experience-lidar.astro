@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectHeader from '../../components/ProjectHeader.astro';
+import ProjectOverview from '../../components/ProjectOverview.astro';
+import ProjectParagraph from '../../components/ProjectParagraph.astro';
+import ProjectVideo from '../../components/ProjectVideo.astro';
+
+const title = "Experience LiDAR";
+
+---
+<BaseLayout pageTitle={title}>
+  <div class="grid grid-cols-1 lg:grid-cols-zoe">
+    <ProjectOverview title={title} image="/images/work/experience-lidar/header.png">
+      <div slot="highlights">
+        <p><strong>Group</strong> design project</p>
+        <p><strong>Project date:</strong> Apr 2021 - Nov 2021</p>
+        <p><strong>Project Lead:</strong> Studio Philip Ross</p>
+        <p><strong>Client:</strong> Eindhoven Hendrik Casimir Institute, Intelligent Lighting Institute</p>
+      </div>
+      <div slot="summary">
+        <p>Today, more sensors are used as our eyes for perceiving the world. The data from the sensors is used as input for smart device. But how the sensor actually works is not always clear. What does the world look like through the eyes of technology (LiDAR technology to be specific)? This question is the main inspiration for our installation.</p>
+        <p><br /></p>
+        <p>LiDAR technology uses invisible light beams to measure the distance and speed of the objects and people in the surrounding. In this way, the environment is made into 3D information consists of lights. The core concept of this installation is that the participants can be a part of the data collection process and see what the sensors are seeing with their own eyes. And from this experience, they could potentially understand more about what is happen behind the LiDAR technology.</p>
+        <p><br /></p>
+        <p>The concept and the core technology implementation of this project have already been developed by Studio Philip Ross. For the student team, our task in this project is to translate this concept into an interactive, fun, and feasible light show installation. As the result, we have designed an experience that allow the visitors to see how the sensors are “reading” them through the 3D visualization on the projection screen. The visualization will give real-time feedback to any movement of the visitors, to make the experience more interactive.</p>
+      </div>
+    </ProjectOverview>
+
+    <ProjectHeader>The Light</ProjectHeader>
+    <ProjectParagraph>
+      In the team, I am responsible for determining the behaviors of the light beams and to make sure the 3D visualization does deliver the real-time feedback impression to the visitors. I first sketch out few possible scenarios with the lights, then write the behavior description to specific how the light will behave, and how the visitors are expected to interact with the lights. The behavior description is used to guide the Wizard of Oz prototyping, where the team experiment about different light behaviors and interactions with the light.
+    </ProjectParagraph>
+    <img src="/images/work/experience-lidar/sketch-1.png" class="mb-16 lg:mb-24 lg:col-span-2 lg:col-start-2">
+    <img src="/images/work/experience-lidar/sketch-2.png" class="mb-16 lg:mb-24 lg:col-span-2">
+    <img src="/images/work/experience-lidar/sketch-3.png" class="mb-5 lg:mb-24 lg:col-span-2 lg:col-start-2">
+    <img src="/images/work/experience-lidar/text.png" class="mb-5 lg:mb-24 lg:col-span-3">
+    <ProjectVideo youtubeId="YeKY1a3bVHQ"></ProjectVideo>
+
+    <ProjectHeader>The 3D Visualization</ProjectHeader>
+    <ProjectParagraph>
+      In the team, I am responsible for determining the behaviors of the light beams and to make sure the 3D visualization does deliver the real-time feedback impression to the visitors. I first sketch out few possible scenarios with the lights, then write the behavior description to specific how the light will behave, and how the visitors are expected to interact with the lights. The behavior description is used to guide the Wizard of Oz prototyping, where the team experiment about different light behaviors and interactions with the light.
+    </ProjectParagraph>
+    <img src="/images/work/experience-lidar/inspiration.png" class="mb-5 lg:col-span-2">
+    <img src="/images/work/experience-lidar/visualization-sketch.png" class="mb-5 lg:mb-24 lg:col-span-2 lg:col-start-2">
+    <ProjectVideo youtubeId="aWbvJHf9ihI"></ProjectVideo>
+    <img src="/images/work/experience-lidar/visualization-in-use.png" class="mb-5 mt-5 lg:mt-24 lg:col-span-3">
+
+
+    <ProjectHeader>Visitor Observation</ProjectHeader>
+
+    <ProjectHeader>Reflection</ProjectHeader>
+  </div>
+</BaseLayout>

@@ -1,12 +1,11 @@
 ---
 export interface Props {
-    page: string;
-    image: string;
+    name: string;
 }
 
-const { page, image } = Astro.props;
-let href = '/work/' + page;
-let imageSrc = '/images/work/' + image;
+const { name } = Astro.props;
+let href = '/work/' + name;
+let imageSrc = '/images/work/' + name + '.png';
 ---
 
 <a href={href} class="lg:col-span-2 lg:col-start-2 mb-24">

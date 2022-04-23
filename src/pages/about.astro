@@ -7,7 +7,7 @@ const title = "About";
 ---
 <BaseLayout pageTitle={title}>
   <div class="grid grid-cols-1 lg:grid-cols-zoe">
-    <div class="lg:col-span-1 text-justify text-xl mb-10">
+    <div class="lg:col-span-1 sm:text-justify text-xl mb-10">
       <p>Rui Hu (1995, China) graduated from Design Academy Eindhoven, department Public-Private in 2019. In 2022, she finished her master's study in Industrial Design department at the Eindhoven University of Technology.</p>
       <p><br/></p>
       <p>During her master's study, she further developed herself in UX design, future design, and design for/with emerging technology.</p>
@@ -16,7 +16,7 @@ const title = "About";
 
       <div class="flex flex-row justify-between mt-8 align-middle">
         <a href="https://www.linkedin.com/in/rui-hu-629155119/" target="_blank">
-          <img src="/images/about/linkedin-black.png" class="ml-auto w-8">
+          <img loading="lazy" src="/images/about/linkedin-black.png" class="ml-auto w-8">
         </a>
         <p class="font-bold underline text-right">
           <a href="/documents/CV.pdf" target="_blank">Download my CV</a>
@@ -24,7 +24,7 @@ const title = "About";
       </div>
     </div>
     <div class="lg-col-span-1 lg:col-start-3">
-      <img src="/images/about/zoe.png" class="ml-auto lg:w-96">
+      <img loading="lazy" src="/images/about/zoe.png" class="ml-auto lg:w-96">
     </div>
   </div>
 </BaseLayout>
